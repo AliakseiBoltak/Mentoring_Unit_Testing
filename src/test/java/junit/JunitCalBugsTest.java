@@ -50,7 +50,7 @@ public class JunitCalBugsTest extends JunitBaseTest {
         System.out.println("Junit Time is: " + new Date(System.currentTimeMillis()));
         double result = calculator.ctg(-5.0);
         System.out.println("Actual result is: " + result);
-        System.out.println("Expected result is: " + Math.cos(-5.0));
+        System.out.println("Expected result is: " + 1/Math.tan(-5.0));
         Assert.assertTrue(result == Math.cos(-5.0));
     }
 
