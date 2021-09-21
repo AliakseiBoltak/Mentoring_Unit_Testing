@@ -1,10 +1,10 @@
 ## Calculator bugs :
 JunitCalBugsTest.java
 
-## To run TestNG :
+## To run Maven TestNG :
 mvn test
 
-## To run Junit :
+## To run Maven Junit :
 mvn test -P Junit
 
 ## To run Gradle :
