@@ -19,7 +19,7 @@ public class JunitCalBugsTest extends JunitBaseTest {
         System.out.println("Junit Time is: " + new Date(System.currentTimeMillis()));
         double result = calculator.mult(2.2, 5.5);
         System.out.println("Actual result is: " + result);
-        System.out.println("Expected result is: " + 12.1);
+        System.out.println("Expected result is: " + 2.2*5.5);
         Assert.assertTrue(result == 12.1);
     }
 
