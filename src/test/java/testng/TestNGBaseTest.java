@@ -6,7 +6,7 @@ import org.testng.annotations.BeforeClass;
 
 public class TestNGBaseTest {
 
-    protected Calculator calculator;
+    public Calculator calculator;
 
     @BeforeClass
 	public void setUp() {

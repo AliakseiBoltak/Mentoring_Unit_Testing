@@ -5,7 +5,7 @@ import org.junit.BeforeClass;
 import org.junit.AfterClass;
 
 public class JunitBaseTest {
-    protected static Calculator calculator;
+    public static Calculator calculator;
 
     @BeforeClass
     public static void setUp() {
