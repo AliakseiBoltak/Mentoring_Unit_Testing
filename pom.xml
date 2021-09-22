@@ -1,17 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <groupId>com.epam.cdp</groupId>
-    <artifactId>cal</artifactId>
+    <groupId>com.upskiller.automation</groupId>
+    <artifactId>calculator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <profiles>
         <profile>
-            <id>testNG</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
+            <id>TestNG</id>
             <build>
                 <plugins>
                     <plugin>
@@ -26,11 +22,9 @@
                             </dependency>
                         </dependencies>
                         <configuration>
-                            <suiteXmlFiles>
-                                <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
-                            </suiteXmlFiles>
-                            <parallel>methods</parallel>
-                            <threadCount>5</threadCount>
+                            <includes>
+                                <include>**/TestNGTest.java</include>
+                            </includes>
                         </configuration>
                     </plugin>
                 </plugins>
@@ -39,6 +33,9 @@
 
         <profile>
             <id>Junit</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
             <build>
                 <plugins>
                     <plugin>
@@ -53,10 +50,8 @@
                             </dependency>
                         </dependencies>
                         <configuration>
-                            <parallel>methods</parallel>
-                            <threadCount>5</threadCount>
                             <includes>
-                                <include>**/JunitCalBugsTest.java</include>
+                                <include>**/JUnitTest.java</include>
                             </includes>
                         </configuration>
                     </plugin>
@@ -67,7 +62,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.epam.cdp</groupId>
+            <groupId>com.upskiller.automation</groupId>
             <artifactId>calculator</artifactId>
             <scope>system</scope>
             <version>1.0</version>
