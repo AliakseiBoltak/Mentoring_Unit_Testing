@@ -3,7 +3,7 @@
 
 	<test name="Div Cal Test">
 		<classes>
-			<class name="testng.TestNGDivCalTest"/>
+			<class name="testng.TestNGCalculatorTest"/>
 		</classes>
 	</test>
 

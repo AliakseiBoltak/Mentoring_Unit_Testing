@@ -1,11 +1,8 @@
-## Calculator bugs :
-JunitCalBugsTest.java
-
 ## To run Maven TestNG :
-mvn test
+mvn clean test -Dtest=TestNGCalculatorTest
 
 ## To run Maven Junit :
-mvn test -P Junit
+mvn clean test -Dtest=JunitCalculatorTest
 
 ## To run Gradle :
 gradle test

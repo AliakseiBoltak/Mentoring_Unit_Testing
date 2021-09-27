@@ -9,7 +9,7 @@ import java.util.Date;
 
 import static org.hamcrest.CoreMatchers.containsString;
 
-public class JunitCalBugsTest extends JunitBaseTest {
+public class JunitCalculatorTest extends JunitBaseTest {
     @Rule
     public final ExpectedException exception = ExpectedException.none();
 

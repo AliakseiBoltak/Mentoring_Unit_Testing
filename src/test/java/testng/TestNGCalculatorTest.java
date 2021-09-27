@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import java.util.Date;
 
-public class TestNGDivCalTest extends TestNGBaseTest{
+public class TestNGCalculatorTest extends TestNGBaseTest{
 
     @Test
     public void sub() throws InterruptedException {
